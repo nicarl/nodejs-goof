@@ -29,6 +29,8 @@ var app = express();
 var routes = require('./routes');
 var routesUsers = require('./routes/users.js')
 
+var super_secret_token = 'SECRET_TOKEN_CD2D346E-A01B-4209-B80C-3B29A0A5B2A9';
+
 // all environments
 app.set('port', process.env.PORT || 3001);
 app.engine('ejs', ejsEngine);
