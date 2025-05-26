@@ -29,6 +29,8 @@ var app = express();
 var routes = require('./routes');
 var routesUsers = require('./routes/users.js')
 
+let MY_SECRET = '99B777A2-07B0-4F85-B492-4E8BB4411073';
+
 // all environments
 app.set('port', process.env.PORT || 3001);
 app.engine('ejs', ejsEngine);
